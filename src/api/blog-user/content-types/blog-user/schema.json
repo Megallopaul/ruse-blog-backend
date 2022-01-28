@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_users",
+  "info": {
+    "singularName": "blog-user",
+    "pluralName": "blog-users",
+    "displayName": "Blog user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "blog_user"
+    }
+  }
+}
