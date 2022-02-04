@@ -17,12 +17,6 @@
       "required": true,
       "maxLength": 5000,
       "private": true
-    },
-    "blog_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::blog-user.blog-user",
-      "inversedBy": "comments"
     }
   }
 }
