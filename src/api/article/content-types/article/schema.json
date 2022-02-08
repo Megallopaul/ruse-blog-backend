@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "articles",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "Post",
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
     "description": ""
   },
   "options": {
@@ -41,7 +41,7 @@
       },
       "type": "string",
       "required": true,
-      "maxLength": 80
+      "unique": true
     },
     "abstract": {
       "pluginOptions": {
@@ -56,11 +56,13 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ],
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       }
     },
