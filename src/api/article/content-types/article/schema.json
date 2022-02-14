@@ -71,10 +71,10 @@
       "relation": "oneToMany",
       "target": "api::comment.comment"
     },
-    "authors": {
+    "author": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     }
   }
 }
