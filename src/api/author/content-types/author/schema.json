@@ -44,12 +44,6 @@
           "localized": true
         }
       }
-    },
-    "article": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::article.article",
-      "inversedBy": "authors"
     }
   }
 }

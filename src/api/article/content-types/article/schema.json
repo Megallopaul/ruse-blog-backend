@@ -74,8 +74,7 @@
     "authors": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::author.author",
-      "mappedBy": "article"
+      "target": "api::author.author"
     }
   }
 }
