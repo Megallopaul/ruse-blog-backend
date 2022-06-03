@@ -13,12 +13,6 @@
   "attributes": {
     "date": {
       "type": "date"
-    },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "tests"
     }
   }
 }

@@ -33,16 +33,6 @@
       },
       "type": "richtext"
     },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "abstract": {
       "pluginOptions": {
         "i18n": {
@@ -76,11 +66,14 @@
       "relation": "oneToMany",
       "target": "api::author.author"
     },
-    "tests": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::test.test",
-      "inversedBy": "articles"
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
