@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1417,11 +1418,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/authors"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2731,6 +2733,7 @@
           "Author"
         ],
         "parameters": [],
+        "operationId": "post/authors",
         "requestBody": {
           "required": true,
           "content": {
@@ -2756,6 +2759,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -4076,11 +4080,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/authors/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -5401,6 +5406,7 @@
             }
           }
         ],
+        "operationId": "put/authors/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -5485,6 +5491,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -5655,13 +5662,14 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/authors/{id}"
       }
     },
     "/authors/{id}/localizations": {
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -6982,6 +6990,7 @@
             }
           }
         ],
+        "operationId": "post/authors/{id}/localizations",
         "requestBody": {
           "required": true,
           "content": {

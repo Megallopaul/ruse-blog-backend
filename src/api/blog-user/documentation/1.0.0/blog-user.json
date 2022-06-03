@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -646,11 +647,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/blog-users"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1189,6 +1191,7 @@
           "Blog-user"
         ],
         "parameters": [],
+        "operationId": "post/blog-users",
         "requestBody": {
           "required": true,
           "content": {
@@ -1215,6 +1218,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1764,11 +1768,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/blog-users/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2318,6 +2323,7 @@
             }
           }
         ],
+        "operationId": "put/blog-users/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -2386,6 +2392,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2556,7 +2563,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/blog-users/{id}"
       }
     }
   }
