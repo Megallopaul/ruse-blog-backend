@@ -4,5 +4,8 @@ module.exports = ({ env }) => ({
       jwtSecret: env('JWT_SECRET')
     },
   },
+  'import-export-entries': {
+    enabled: true,
+  },
 });
 
